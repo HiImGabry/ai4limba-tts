@@ -8,8 +8,8 @@
   </head>
 
   <body class="flex items-top justify-center min-h-screen bg-gray-50 font-primary font-extralight">
-    <div class="max-w-5xl mt-4 space-y-8">
-      <header class="my-8">
+    <div class="max-w-5xl my-16 space-y-8">
+      <header>
         <span class="text-3xl font-light text-start">
           Effective and Traceable Speech Synthesis for Low-Resource Languages
         </span>
@@ -26,25 +26,158 @@
           <span class="text-lg">Marco Manolo Manca</span>
         </div>
 
-        <!-- ADD DELIMITER -->
-
         <div class="flex space-x-2 mt-4">
           <span class="text-lg font-light">Candidate:</span>
           <span class="text-lg">Gabriele Carta</span>
         </div>
       </div>
       
-      <!-- ADD DELIMITER -->
+      <div class="flex items-center w-full">
+        <div aria-hidden="true" class="w-full border-t border-gray-300"></div>
+        <div class="flex justify-center w-full">
+          <span class="text-2xl font-light">Abstract</span>
+        </div>
+        <div aria-hidden="true" class="w-full border-t border-gray-300"></div>
+      </div>
       
-      <div class="flex flex-col space-y-2">
-        <span class="text-2xl font-light">Abstract</span>
+      <div class="w-full text-justify">
         <span class="text-lg text-justify">Recent advances in speech synthesis have led to highly expressive and intelligible text-to-speech systems. However, these developments have predominantly targeted high-resource languages, leaving low-resource languages underrepresented and further widening the digital divide. In this thesis, we address this disparity by focusing on Sardinian, a language spoken on the island of Sardinia, characterized by limited digital resources and significant dialectal variation. We present a reproducible pipeline for speech data processing, including cleaning, alignment, and segmentation, and fine-tune two state-of-the-art multilingual text-to-speech models (XTTS-v2 and F5TTS) on two distinct Sardinian corpora. The resulting models are evaluated using established objective metrics to assess synthesis quality across dialectal varieties. Beyond synthesis performance, we examine the ethical implications associated with the uncontrolled use of generative speech technologies, particularly the risks of voice impersonation and misinformation. To address these concerns, we integrate an acoustic watermarking mechanism into the generated speech, enabling verifiable traceability and reliable differentiation between synthetic and human speech. Our findings contribute a principled and generalizable framework for responsible speech synthesis in low-resource contexts, with implications for both technological development and ethical deployment.</span>
       </div>
 
-      <!-- ADD DELIMITER -->
+      <div class="flex items-center w-full">
+        <div aria-hidden="true" class="w-full border-t border-gray-300"></div>
+        <div class="flex justify-center w-full">
+          <span class="text-2xl font-light">Audio Samples</span>
+        </div>
+        <div aria-hidden="true" class="w-full border-t border-gray-300"></div>
+      </div>
 
       <div class="flex flex-col space-y-2">
-        <span class="text-2xl font-light">Audio Samples</span>
+        <div class="flex flex-col space-y-2">
+          <span class="text-xl font-light">Mannigos</span>
+          <span class="text-lg text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue finibus metus vel interdum. In laoreet dui velit, quis commodo.</span>
+          
+          <div class="grid grid-cols-3 gap-x-8">
+            <div class="flex flex-col space-y-1">
+              <span class="text-lg font-light text-center">Original</span>
+              <audio controls class="w-full">
+                <source src="./audio/mannigos/original.wav" type="audio/wav">
+                Your browser does not support the audio element.
+              </audio>
+            </div>
+
+            <div class="flex flex-col space-y-1">
+              <span class="text-lg font-light text-center">XTTS-v2</span>
+              <audio controls class="w-full">
+                <source src="./audio/mannigos/xtts_v2.wav" type="audio/wav">
+                Your browser does not support the audio element.
+              </audio>
+            </div>
+
+            <div class="flex flex-col space-y-1">
+              <span class="text-lg font-light text-center">F5TTS</span>
+              <audio controls class="w-full">
+                <source src="./audio/mannigos/f5tts.wav" type="audio/wav">
+                Your browser does not support the audio element.
+              </audio>
+            </div>
+          </div>
+
+          <div aria-hidden="true" class="w-full border-t border-gray-300 my-8"></div>
+
+          <span class="text-lg text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue finibus metus vel interdum. In laoreet dui velit, quis commodo.</span>
+        
+          <div class="grid grid-cols-3 gap-x-8">
+            <div class="flex flex-col space-y-1">
+              <span class="text-lg font-light text-center">Original</span>
+              <audio controls class="w-full">
+                <source src="./audio/mannigos/original.wav" type="audio/wav">
+                Your browser does not support the audio element.
+              </audio>
+            </div>
+
+            <div class="flex flex-col space-y-1">
+              <span class="text-lg font-light text-center">XTTS-v2</span>
+              <audio controls class="w-full">
+                <source src="./audio/mannigos/xtts_v2.wav" type="audio/wav">
+                Your browser does not support the audio element.
+              </audio>
+            </div>
+
+            <div class="flex flex-col space-y-1">
+              <span class="text-lg font-light text-center">F5TTS</span>
+              <audio controls class="w-full">
+                <source src="./audio/mannigos/f5tts.wav" type="audio/wav">
+                Your browser does not support the audio element.
+              </audio>
+            </div>
+          </div>
+        </div>
+
+        <div aria-hidden="true" class="w-full border-t border-gray-300 my-8"></div>
+
+        <div class="flex flex-col space-y-2">
+          <span class="text-xl font-light">SardinianVox</span>
+          <span class="text-lg text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue finibus metus vel interdum. In laoreet dui velit, quis commodo.</span>
+          
+          <div class="grid grid-cols-3 gap-x-8">
+            <div class="flex flex-col space-y-1">
+              <span class="text-lg font-light text-center">Original</span>
+              <audio controls class="w-full">
+                <source src="./audio/mannigos/original.wav" type="audio/wav">
+                Your browser does not support the audio element.
+              </audio>
+            </div>
+
+            <div class="flex flex-col space-y-1">
+              <span class="text-lg font-light text-center">XTTS-v2</span>
+              <audio controls class="w-full">
+                <source src="./audio/mannigos/xtts_v2.wav" type="audio/wav">
+                Your browser does not support the audio element.
+              </audio>
+            </div>
+
+            <div class="flex flex-col space-y-1">
+              <span class="text-lg font-light text-center">F5TTS</span>
+              <audio controls class="w-full">
+                <source src="./audio/mannigos/f5tts.wav" type="audio/wav">
+                Your browser does not support the audio element.
+              </audio>
+            </div>
+          </div>
+
+          <div aria-hidden="true" class="w-full border-t border-gray-300 my-8"></div>
+
+          <span class="text-lg text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue finibus metus vel interdum. In laoreet dui velit, quis commodo.</span>
+        
+          <div class="grid grid-cols-3 gap-x-8">
+            <div class="flex flex-col space-y-1">
+              <span class="text-lg font-light text-center">Original</span>
+              <audio controls class="w-full">
+                <source src="./audio/mannigos/original.wav" type="audio/wav">
+                Your browser does not support the audio element.
+              </audio>
+            </div>
+
+            <div class="flex flex-col space-y-1">
+              <span class="text-lg font-light text-center">XTTS-v2</span>
+              <audio controls class="w-full">
+                <source src="./audio/mannigos/xtts_v2.wav" type="audio/wav">
+                Your browser does not support the audio element.
+              </audio>
+            </div>
+
+            <div class="flex flex-col space-y-1">
+              <span class="text-lg font-light text-center">F5TTS</span>
+              <audio controls class="w-full">
+                <source src="./audio/mannigos/f5tts.wav" type="audio/wav">
+                Your browser does not support the audio element.
+              </audio>
+            </div>
+          </div>
+
+          <div aria-hidden="true" class="w-full border-t border-gray-300 my-8"></div>
+        </div>
       </div>
     </div>
   </body>
